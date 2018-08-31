@@ -1,0 +1,250 @@
+--
+-- For more information on build.settings see the Corona SDK Build Guide at:
+-- http://docs.coronalabs.com/guide/distribution/buildSettings/index.html
+--
+
+settings =
+{
+    
+    orientation =
+    {
+        -- Supported values for orientation:
+        -- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+        default = "landscapeRight",
+        supported = { "landscapeRight", "landscapeLeft" }
+    },
+    
+    excludeFiles =
+    {
+        -- Include only the necessary icon files on each platform
+        iphone = {
+            "Icon-*dpi.png", "README.md",
+            'images/animals/carabao*',
+            'images/animals/cockroach*',
+            'images/animals/crow*',
+            'images/animals/earthworm*',
+            'images/animals/firefly*',
+            'images/animals/gorilla*',
+            'images/animals/hawk*',
+            'images/animals/rooster*',
+            'images/animals/sparrow*',
+            'images/animals/tarsier*',
+            'images/animals/whale_shark*',
+            'images/animals/worm*',
+
+            'images/animals/thumbs/carabao*',
+            'images/animals/thumbs/cockroach*',
+            'images/animals/thumbs/crow*',
+            'images/animals/thumbs/earthworm*',
+            'images/animals/thumbs/firefly*',
+            'images/animals/thumbs/gorilla*',
+            'images/animals/thumbs/hawk*',
+            'images/animals/thumbs/rooster*',
+            'images/animals/thumbs/sparrow*',
+            'images/animals/thumbs/tarsier*',
+            'images/animals/thumbs/whale_shark*',
+            'images/animals/thumbs/worm*',
+
+            'audio/carabao*',
+            'audio/cockroach*',
+            'audio/crow*',
+            'audio/earthworm*',
+            'audio/firefly*',
+            'audio/gorilla*',
+            'audio/hawk*',
+            'audio/rooster*',
+            'audio/sparrow*',
+            'audio/tarsier*',
+            'audio/whale_shark*',
+            'audio/worm*',
+
+            'audio/sounds/carabao*',
+            'audio/sounds/cockroach*',
+            'audio/sounds/crow*',
+            'audio/sounds/earthworm*',
+            'audio/sounds/firefly*',
+            'audio/sounds/gorilla*',
+            'audio/sounds/hawk*',
+            'audio/sounds/rooster*',
+            'audio/sounds/sparrow*',
+            'audio/sounds/tarsier*',
+            'audio/sounds/whale_shark*',
+            'audio/sounds/worm*',
+        },
+        android = {
+            "Icon.png", "Icon-Small-*.png", "Icon*@2x.png", "README.md",
+            'images/animals/carabao*',
+            'images/animals/cockroach*',
+            'images/animals/crow*',
+            'images/animals/earthworm*',
+            'images/animals/firefly*',
+            'images/animals/gorilla*',
+            'images/animals/hawk*',
+            'images/animals/rooster*',
+            'images/animals/sparrow*',
+            'images/animals/tarsier*',
+            'images/animals/whale_shark*',
+            'images/animals/worm*',
+
+            'images/animals/thumbs/carabao*',
+            'images/animals/thumbs/cockroach*',
+            'images/animals/thumbs/crow*',
+            'images/animals/thumbs/earthworm*',
+            'images/animals/thumbs/firefly*',
+            'images/animals/thumbs/gorilla*',
+            'images/animals/thumbs/hawk*',
+            'images/animals/thumbs/rooster*',
+            'images/animals/thumbs/sparrow*',
+            'images/animals/thumbs/tarsier*',
+            'images/animals/thumbs/whale_shark*',
+            'images/animals/thumbs/worm*',
+
+            'audio/carabao*',
+            'audio/cockroach*',
+            'audio/crow*',
+            'audio/earthworm*',
+            'audio/firefly*',
+            'audio/gorilla*',
+            'audio/hawk*',
+            'audio/rooster*',
+            'audio/sparrow*',
+            'audio/tarsier*',
+            'audio/whale_shark*',
+            'audio/worm*',
+
+            'audio/sounds/carabao*',
+            'audio/sounds/cockroach*',
+            'audio/sounds/crow*',
+            'audio/sounds/earthworm*',
+            'audio/sounds/firefly*',
+            'audio/sounds/gorilla*',
+            'audio/sounds/hawk*',
+            'audio/sounds/rooster*',
+            'audio/sounds/sparrow*',
+            'audio/sounds/tarsier*',
+            'audio/sounds/whale_shark*',
+            'audio/sounds/worm*',
+        },
+    },
+
+    --
+    -- iOS Section
+    --
+    iphone =
+    {
+        plist =
+        {
+            UIStatusBarHidden = false,
+            UIPrerenderedIcon = true, -- set to false for "shine" overlay
+            --UIApplicationExitsOnSuspend = true, -- uncomment to quit app on suspend
+
+            CFBundleIconFiles =
+            {
+                "Icon.png",
+                "Icon@2x.png",
+                "Icon-60.png",
+                "Icon-60@2x.png",
+                "Icon-60@3x.png",
+                "Icon-72.png",
+                "Icon-72@2x.png",
+                "Icon-76.png",
+                "Icon-76@2x.png",
+                "Icon-Small.png",
+                "Icon-Small@2x.png",
+                "Icon-Small@3x.png",
+                "Icon-Small-40.png",
+                "Icon-Small-40@2x.png",
+                "Icon-Small-40@3x.png",
+                "Icon-Small-50.png",
+                "Icon-Small-50@2x.png",
+            },
+            --launch image files table
+            UILaunchImages = {
+                {  -- iPhone 4 LandscapeLeft
+                    ["UILaunchImageMinimumOSVersion"] = "7.0",
+                    ["UILaunchImageName"] = "Default",
+                    ["UILaunchImageOrientation"] = "LandscapeLeft",
+                    ["UILaunchImageSize"] = "{320, 480}"
+                },
+                {  -- iPhone 4 LandscapeRight
+                    ["UILaunchImageMinimumOSVersion"] = "7.0",
+                    ["UILaunchImageName"] = "Default",
+                    ["UILaunchImageOrientation"] = "LandscapeRight",
+                    ["UILaunchImageSize"] = "{320, 480}"
+                },
+                {  -- iPhone 5 LandscapeLeft
+                    ["UILaunchImageMinimumOSVersion"] = "7.0",
+                    ["UILaunchImageName"] = "Default-568h",
+                    ["UILaunchImageOrientation"] = "LandscapeLeft",
+                    ["UILaunchImageSize"] = "{320, 568}"
+                },
+                {  -- iPhone 5 LandscapeRight
+                    ["UILaunchImageMinimumOSVersion"] = "7.0",
+                    ["UILaunchImageName"] = "Default-568h",
+                    ["UILaunchImageOrientation"] = "LandscapeRight",
+                    ["UILaunchImageSize"] = "{320, 568}"
+                },
+                {  -- iPad LandscapeLeft
+                    ["UILaunchImageMinimumOSVersion"] = "7.0",
+                    ["UILaunchImageName"] = "Default-Landscape",
+                    ["UILaunchImageOrientation"] = "LandscapeLeft",
+                    ["UILaunchImageSize"] = "{768, 1024}"
+                },
+                {  -- iPad LandscapeRight
+                    ["UILaunchImageMinimumOSVersion"] = "7.0",
+                    ["UILaunchImageName"] = "Default-Landscape",
+                    ["UILaunchImageOrientation"] = "LandscapeRight",
+                    ["UILaunchImageSize"] = "{768, 1024}"
+                },
+                {  -- iPhone 6 LandscapeLeft
+                    ["UILaunchImageMinimumOSVersion"] = "8.0",
+                    ["UILaunchImageName"] = "Default-667h",
+                    ["UILaunchImageOrientation"] = "LandscapeLeft",
+                    ["UILaunchImageSize"] = "{375, 667}"
+                },
+                {  -- iPhone 6 LandscapeRight
+                    ["UILaunchImageMinimumOSVersion"] = "8.0",
+                    ["UILaunchImageName"] = "Default-667h",
+                    ["UILaunchImageOrientation"] = "LandscapeRight",
+                    ["UILaunchImageSize"] = "{375, 667}"
+                },
+                {  -- iPhone 6 Plus LandscapeLeft
+                    ["UILaunchImageMinimumOSVersion"] = "8.0",
+                    ["UILaunchImageName"] = "Default-Landscape-736h",
+                    ["UILaunchImageOrientation"] = "LandscapeLeft",
+                    ["UILaunchImageSize"] = "{414, 736}"
+                },
+                {  -- iPhone 6 Plus LandscapeRight
+                    ["UILaunchImageMinimumOSVersion"] = "8.0",
+                    ["UILaunchImageName"] = "Default-Landscape-736h",
+                    ["UILaunchImageOrientation"] = "LandscapeRight",
+                    ["UILaunchImageSize"] = "{414, 736}"
+                },
+            },
+            --[[
+            -- iOS app URL schemes:
+            CFBundleURLTypes =
+            {
+                {
+                    CFBundleURLSchemes =
+                    {
+                        "fbXXXXXXXXX",  -- replace XXXXXXXXX with your Facebook appId
+                    }
+                }
+            }
+            --]]
+        }
+    },
+    
+    --
+    -- Android Section
+    --
+    android =
+    {
+        usesPermissions =
+        {
+            -- "android.permission.INTERNET",
+        },
+    },
+}
