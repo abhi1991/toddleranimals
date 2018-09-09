@@ -1,6 +1,6 @@
 # Toddler Animals
 
-![Icon](https://cdn.rawgit.com/ricoz/toddleranimals/6dcf9cc3/Icon-xhdpi.png)
+![Icon](Icon-xhdpi.png)
 
 Educational first words flashcards and quiz app for preschoolers released in 2015 for iOS devices. Now released as open source under MIT license.
 
@@ -10,7 +10,7 @@ Created using an older version of [Corona SDK](https://coronalabs.com/).
 
 ## Screenshots
 
-<img src="https://cdn.rawgit.com/ricoz/toddleranimals/ca32040a/screenshots/1.jpg" alt="Menu Screen" width="400"> <img src="https://cdn.rawgit.com/ricoz/toddleranimals/ca32040a/screenshots/2.jpg" alt="Flash Card Screen" width="400"> <img src="https://cdn.rawgit.com/ricoz/toddleranimals/ca32040a/screenshots/4.jpg" alt="Quiz Screen" width="400"> <img src="https://cdn.rawgit.com/ricoz/toddleranimals/ca32040a/screenshots/5.jpg" alt="Flash Card Screen" width="400">
+<img src="screenshots/1.jpg" alt="Menu Screen" width="400"> <img src="screenshots/2.jpg" alt="Flash Card Screen" width="400"> <img src="screenshots/4.jpg" alt="Quiz Screen" width="400"> <img src="screenshots/5.jpg" alt="Flash Card Screen" width="400">
 
 ## App Store Description
 
